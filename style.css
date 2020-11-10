@@ -75,7 +75,7 @@ body{
 }
 
 .list-todo li{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid  #80808063;
   padding-top: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
