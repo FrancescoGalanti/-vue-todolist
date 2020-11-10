@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS SNACKS v5</title>
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <!-- Main css -->
     <link rel="stylesheet" href="style.css">
     <!-- vue -->
@@ -19,9 +21,18 @@
     <!-- container that has input and an array with dinamic value "Todo-list" -->
     <div id="app">
       <!-- The data entered will be pushed into an array managed by vue that prints them in the html code -->
+      <div class="container">
+        <input type="text" name="" value="" placeholder="insert To-do things">
+        <!-- bottom linked with the array created in const app -->
+        <button type="button" name="button">Aggiungi</button>
+      </div>
 
-      <input type="text" name="" value="" placeholder="insert To-do things">
-      <button type="button" name="button">Aggiungi</button>
+         <!-- The actual list to-do -->
+      <ul class="list-todo">
+         <li v-for="items in items">{{ items}}
+           <i class="fas fa-trash"></i>
+         </li>
+      </ul>
     </div>
 
 

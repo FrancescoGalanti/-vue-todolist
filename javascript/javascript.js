@@ -9,7 +9,8 @@
  var app = new Vue({
    el: '#app',
    data: {
-      
+     // To-do list array
+      items:["doing grocery-shop", "washing the car","do the laundry"]
 
    }
  })
