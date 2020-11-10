@@ -1,0 +1,30 @@
+/* general setting */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+/* DESKOTP FIRST */
+/* header */
+
+.logo{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.logo img{
+  height: 50px;
+  width: 100px;
+}
+
+#app{
+  display: flex;
+  justify-content: center;
+}
