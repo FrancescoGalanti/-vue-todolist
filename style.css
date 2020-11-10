@@ -21,20 +21,22 @@ body{
 
 .logo img{
   height: 50px;
-  width: 100px;
+  width: 190px;
 }
 
 .container{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #app input{
-  padding: 5px 10px;
+  padding: 10px 20px;
   border-radius: 10px;
   outline: 0;
   box-shadow: 0.5px 0.5px 2px 0.5px #888888;
   border: none;
+  width: 280px;
 }
 
 #app input:focus,
@@ -47,6 +49,13 @@ body{
   min-width: 100px;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0.5px 0.5px 2px 0.5px #888888;
+  border: none;
+  transition: background-color .4s;
+}
+
+#app button:hover{
+  background-color: #80808045;
 }
 
 .list-todo{
