@@ -22,14 +22,16 @@
     <div id="app">
       <!-- The data entered will be pushed into an array managed by vue that prints them in the html code -->
       <div class="container">
-        <input type="text" name="" value="" placeholder="insert To-do things">
+        <input type="text" id="input" v-model="newitem" placeholder="insert To-do things">
         <!-- bottom linked with the array created in const app -->
-        <button type="button" name="button">Aggiungi</button>
+        <button v-on:click="additem" type="button" name="button">Aggiungi</button>
       </div>
 
-         <!-- The actual list to-do -->
+      <!-- The actual list to-do -->
       <ul class="list-todo">
+        <!-- Interpolation of an array to print in the html handled by vue -->
          <li v-for="items in items">{{ items}}
+           <!-- Eliminate the item in list-todo managed by vue -->
            <i class="fas fa-trash"></i>
          </li>
       </ul>

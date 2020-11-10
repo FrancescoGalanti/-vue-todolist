@@ -12,5 +12,16 @@
      // To-do list array
       items:["doing grocery-shop", "washing the car","do the laundry"]
 
+   },
+   // Methods //
+   methods:{
+
+     additem(){
+       this.items.push(this.newitem)
+       this.newitem = "";
+     }
+
    }
+
+
  })
