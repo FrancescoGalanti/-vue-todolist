@@ -59,7 +59,7 @@ body{
   width: 800px;
   list-style: none;
   padding-right: 20px;
- justify-content: center;
+
 }
 
 .list-todo li{
@@ -67,4 +67,6 @@ body{
   padding-top: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
+  justify-content: space-between;
+  display: flex;
 }
