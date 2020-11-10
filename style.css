@@ -34,14 +34,18 @@ body{
   padding: 10px 20px;
   border-radius: 10px;
   outline: 0;
-  box-shadow: 0.5px 0.5px 2px 0.5px #888888;
-  border: none;
+
   width: 280px;
+  transition: border .4s;
+  border-bottom: 1px solid #8080806b;
+  border-right: 1px solid #8080806b;
+  border-left: 1px solid #0000008c;
+  border-top:  1px solid #0000008c;
 }
 
 #app input:focus,
 #app input:hover{
-  border: 3px solid lightblue;
+  box-shadow: 0.5px 0.5px 2px 0.5px #888888;
 }
 
 #app button{
