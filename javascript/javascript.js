@@ -17,15 +17,20 @@
      // Call back function that add a new item in the list //
      additem(){
        // pushing new todo list in the array //
-       this.items.push(this.newitem.trim())
-       // clearing the input //
-       this.newitem = "";
+       // validation//
+       if(this.newitem !== ""){
+         this.items.push(this.newitem.trim().replace(/, +/g, ','))
+         // clearing the input //
+         this.newitem = "";
+       };
      },
      // call back function that eliminate the item in the list //
      removeitem(array,index){
        Vue.delete(this.items, index);
 
-     }
+     },
+
+
 
    }
 
