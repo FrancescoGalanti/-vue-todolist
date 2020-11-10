@@ -32,7 +32,7 @@
         <!-- Interpolation of an array to print in the html handled by vue -->
          <li v-for="(items,key) in items">{{ items}}
            <!-- Eliminate the item in list-todo managed by vue -->
-           <i v-on:click="removeitem(items,key)" class="fas fa-trash"></i>
+           <i v-on:click="removeitem(items,key,legth)" class="fas fa-trash"></i>
          </li>
       </ul>
     </div>
