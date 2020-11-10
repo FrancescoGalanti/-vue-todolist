@@ -15,10 +15,14 @@
    },
    // Methods //
    methods:{
-
+     // Call back function that add a new item in the list //
      additem(){
        this.items.push(this.newitem)
        this.newitem = "";
+     },
+     // call back function that eliminate the item in the list
+     removeitem(array,index){
+       Vue.delete(this.items, index);
      }
 
    }

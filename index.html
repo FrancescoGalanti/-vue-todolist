@@ -30,9 +30,9 @@
       <!-- The actual list to-do -->
       <ul class="list-todo">
         <!-- Interpolation of an array to print in the html handled by vue -->
-         <li v-for="items in items">{{ items}}
+         <li v-for="(items,key) in items">{{ items}}
            <!-- Eliminate the item in list-todo managed by vue -->
-           <i class="fas fa-trash"></i>
+           <i v-on:click="removeitem(items,key)" class="fas fa-trash"></i>
          </li>
       </ul>
     </div>
