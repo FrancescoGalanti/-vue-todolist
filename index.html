@@ -28,13 +28,14 @@
       </div>
 
       <!-- The actual list to-do -->
-      <ul class="list-todo">
+      <ul class="list-todo"v-if="items.length" >
         <!-- Interpolation of an array to print in the html handled by vue -->
          <li v-for="(items,key) in items">{{ items}}
            <!-- Eliminate the item in list-todo managed by vue -->
            <i v-on:click="removeitem(items,key)" class="fas fa-trash"></i>
          </li>
       </ul>
+      <p v-else  class="list-todo">No todos left!</p>
     </div>
 
 
