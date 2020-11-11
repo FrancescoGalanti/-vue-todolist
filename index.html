@@ -21,10 +21,10 @@
     <!-- container that has input and an array with dinamic value "Todo-list" -->
     <div id="app">
       <!-- The data entered will be pushed into an array managed by vue that prints them in the html code -->
-      <div class="container">
-        <input type="text" id="input" v-model="newitem" placeholder="insert To-do things" @keyup.enter="additem">
+      <div class="container flex-direction-column-sm ">
+        <input class="" type="text" id="input" v-model="newitem" placeholder="insert To-do things" @keyup.enter="additem">
         <!-- bottom linked with the array created in const app -->
-        <button v-on:click="additem" type="button" name="button">Aggiungi</button>
+        <button class="style-bottom-sm" v-on:click="additem" type="button" name="button">Aggiungi</button>
       </div>
 
       <!-- The actual list to-do -->

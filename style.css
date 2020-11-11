@@ -30,7 +30,7 @@ body{
   flex-wrap: wrap;
 }
 
-#app input{
+ input{
   padding: 10px 20px;
   border-radius: 10px;
   outline: 0;
@@ -48,7 +48,7 @@ body{
   box-shadow: 0.5px 0.5px 2px 0.5px #888888;
 }
 
-#app button{
+  button{
   margin-left: 30px;
   min-width: 100px;
   border-radius: 10px;
@@ -72,7 +72,7 @@ body{
   padding-bottom: 20px;
   padding-left: 10px;
   margin: 20px auto;
-  width: 50%;
+  width: 70%;
   list-style: none;
   padding-right: 20px;
 
@@ -95,4 +95,26 @@ body{
 
 .list-todo li i:hover{
   opacity: 1;
+}
+
+
+
+/* MEDIA */
+
+
+
+@media only screen and (max-width: 420px){
+  /* layout header */
+
+  .flex-direction-column-sm{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .style-bottom-sm{
+    flex-basis: 50px;
+    margin-left: 0;
+    width: 50%;
+    margin-top: 20px;
+  }
 }
