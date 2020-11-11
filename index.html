@@ -22,7 +22,7 @@
     <div id="app">
       <!-- The data entered will be pushed into an array managed by vue that prints them in the html code -->
       <div class="container">
-        <input type="text" id="input" v-model="newitem" placeholder="insert To-do things">
+        <input type="text" id="input" v-model="newitem" placeholder="insert To-do things" @keyup.enter="additem">
         <!-- bottom linked with the array created in const app -->
         <button v-on:click="additem" type="button" name="button">Aggiungi</button>
       </div>
