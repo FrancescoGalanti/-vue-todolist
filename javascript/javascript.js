@@ -22,7 +22,7 @@
      additem(){
        // pushing new todo list in the array //
        // validation//
-       if(this.newitem.trim().replace(/, +/g, ',') !== ""){
+       if(this.newitem.trim() !== ""){
          this.items.push(this.newitem)
          // clearing the input //
          this.newitem = "";
