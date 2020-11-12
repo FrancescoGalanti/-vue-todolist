@@ -28,7 +28,7 @@
       </div>
 
       <!-- The actual list to-do -->
-      <ul class="list-todo"v-if="items.length" >
+      <ul class="list-todo"v-if="items.length > 0" >
         <!-- Interpolation of an array to print in the html handled by vue -->
          <li class="style-lits-sm style-lits-verysmall" v-for="(items,index) in items">{{ items}}
            <!-- Eliminate the item in list-todo managed by vue -->
